@@ -10,9 +10,17 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/95c17d0e8f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/95c17d0e8f.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
       .manrope {
         font-family: "Manrope", serif;
         font-optical-sizing: auto;
@@ -21,9 +29,56 @@
       }
     </style>
   </head>
-  <body>
-    <header></header>
-    <main></main>
+  <body class="manrope bg-[#fdfbfb]">
+    <main class="max-w-screen-xl mx-auto px-16 lg:px-20">
+        <!-- banner part -->
+      <div class="flex-col sm:flex sm:flex-row">
+        <div>
+            <p class="text-7xl font-extrabold">It's good <br>tea time at <br> The Tea House</p>
+            <p class="text-[#777777S] mt-2">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
+            <button class="rounded-xl mt-3 px-5 py-4 bg-gradient-to-r from-[#FF9851] to-[#FF0201]">Explore More
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+          </div>
+          <div class="">
+            <img class="" src="images/banner.png" alt="">
+            <div  class="relative bottom-24 left-28 h-24 w-60 drop-shadow-lg bg-[#ffff] rounded-xl flex justify-around items-center">
+                <div><i class="fa-solid fa-star text-3xl text-[#f7e134]"></i></div>
+                <div>
+                    <p class="text-2xl font-extrabold ">5.00</p>
+                    <p class="text-[#777777]">Trust Polite Rating</p>
+                </div>
+            </div>
+          </div>
+      </div>
+      <!-- Our Featured Products -->
+       <div class=" flex flex-col">
+          <p class="text-center text-4xl font-extrabold">Our Featured Products</p>
+          <p class="text-center text-[#777777] mt-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+          <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-6 mt-14">
+            <div class="flex flex-col  bg-gradient-to-b from-[#F4F4F4] to-[#f4f4f4a3] rounded-xl shadow-lg h-96 items-center">
+                <img class="p-9 h-3/4 w-5/6" src="images/tea-1.png" alt="">
+                <p class="text-center text-2xl font-extrabold">Milk Tea</p>
+                <p class="text-center font-semibold text-[#777777]">Creamer could be replaced <br> by fresh milk</p>
+            </div>
+            <div class="flex flex-col bg-gradient-to-b from-[#F4F4F4] to-[#f4f4f4a3] rounded-xl shadow-lg h-96 items-center">
+                <img class="p-9 h-3/4 w-5/6" src="images/tea-2.png" alt="">
+                <p class="text-center text-2xl font-extrabold">Milk Tea</p>
+                <p class="text-center font-semibold text-[#777777]">Creamer could be replaced <br> by fresh milk</p>
+            </div>
+            <div class="flex flex-col bg-gradient-to-b from-[#F4F4F4] to-[#f4f4f4a3] rounded-xl shadow-lg h-96 items-center">
+                <img class="p-9 h-3/4 w-5/6" src="images/tea-3.png" alt="">
+                <p class="text-center text-2xl font-extrabold">Milk Tea</p>
+                <p class="text-center font-semibold text-[#777777]">Creamer could be replaced <br> by fresh milk</p>
+            </div>
+            <div class="flex flex-col bg-gradient-to-b from-[#F4F4F4] to-[#f4f4f4a3] rounded-xl drop-shadow-xl h-96 items-center">
+                <img class="p-9 h-3/4 w-5/6" src="images/tea-4.png" alt="">
+                <p class="text-center text-2xl font-extrabold">Milk Tea</p>
+                <p class="text-center font-semibold text-[#777777]">Creamer could be replaced <br> by fresh milk</p>
+            </div>
+          </div>
+       </div>
+    </main>
     <footer></footer>
   </body>
 </html>
